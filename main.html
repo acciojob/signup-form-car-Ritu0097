@@ -7,46 +7,39 @@
 </head>
 
 <body>
-	<form action="your-server-endpoint" method="post">
+	<form method="post">
         <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Name" required>
+        <input placeholder="Name"type="text" id="name"required>
 
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Email" required>
-
-        <label>Gender</label>
-        <input type="radio" id="gender_m" name="gender" value="male" required>
+        <input type="email" id="email" placeholder="Email" required>
         <label for="gender_m">Male</label>
-
-        <input type="radio" id="gender_f" name="gender" value="female" required>
+        <input type="radio" id="gender_m" name="gender" required>
+		
         <label for="gender_f">Female</label>
-
-        <label for="cars">Car Brands</label>
-        <select id="cars" name="cars" required>
-            <option value="" disabled selected>--Please choose an option--</option>
-            <option value="Toyota">Toyota</option>
-            <option value="Honda">Honda</option>
-            <option value="Ford">Ford</option>
-            <!-- Add more options as needed -->
+        <input type="radio" id="gender_f" name="gender" required>
+        <label for="cars">Select a car</label>
+        <select placeholder="--Please choose an option--" id="cars"required>
+            <option>Toyota</option>
+            <option>Honda</option>
+            <option>Ford</option>
         </select>
 
         <label for="age">Age</label>
-        <input type="number" id="age" name="age" placeholder="Age" required>
+        <input type="number" id="age" placeholder="Age" required>
 
         <label for="dob">DOB</label>
-        <input type="date" id="dob" name="dob" required>
+        <input type="date" id="dob" required>
 
         <label for="tel">Phone Number</label>
-        <input type="tel" id="tel" name="tel" placeholder="xxx-xxx-xxxx">
+        <input type="tel" id="tel" placeholder="xxx-xxx-xxxx">
 
         <label for="password">Password</label>
-        <input type="password" id="password" name="password" placeholder="Password" required>
+        <input type="password" id="password" placeholder="Password" required>
 
-        <label>
-            <input type="checkbox" id="tos" name="tos" required>
-            I agree to the TOS
-        </label>
-
+        <label for="tos">I agree to the TOS </label>
+            <input type="checkbox" id="tos" required>
+            
         <button type="submit">Submit</button>
     </form>
 	<!-- the entire body must be written by student -->
